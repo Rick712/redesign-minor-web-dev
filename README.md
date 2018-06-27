@@ -45,6 +45,37 @@ Ondanks dat dit niet mijn belangrijkste leerdoelen waren, heb ik ze wel gehaald.
 
 De belangrijkste leerdoel die ik had was transities en animaties. Ik ben best trots op hetgeen wat ik gemaakt heb. Bijna alle transities en animaties die terug te vinden zijn op de websites heb ik gemaakt. Daarnaast heb ik ook een script geschreven met de intersection observer die ik zo zou kunnen hergebruiken op andere websites die ik ga maken. Daarnaast heb ik duidelijke hover en focus states gemaakt die de interactie met de gebruiker verbeteren.
 
+```
+const scrollTransitions = "scroll-transition",
+  els = document.querySelectorAll("[" + scrollTransitions + "]"),
+  config = {
+    threshold: 0.33
+  };
+
+if (els) {
+  if (IntersectionObserver) {
+    els.forEach(el => {
+      el.classList.add("trans");
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio != 0) {
+          window.setTimeout(function() {
+            entry.target.classList.add("start-transition");
+          }, 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, config);
+
+    els.forEach(el => {
+      observer.observe(el);
+    });
+  }
+}
+```
+
 Mijn laatste leerdoel die ik later heb toegevoegd, het leren van de CLI van git, heb ik wel enigzins gehaald. Voordat ik aan de meesterproef begon vond ik het een beetje eng om in de terminal te typen. Dingen zoals de server starten en gulp runnen deed ik al wel, maar committen, pushen en mergen nog niet. Bas heeft mij goed geholpen met het oefenen met de CLI. Ik heb meerdere malen gecommit, gepush en gemerged met de CLI, maar ik gebruik nog steeds af en toe de desktop versie van git. Ik ben echter niet meer bang om de CLI te gebruiken, en switch ook rustig van branch in de CLI. Ik heb dit leerdoel dus gehaald.
 
 Naast de leerdoelen heb ik nog veel meer geleerd uiteraard. Een van de dingen die ik geleerd heb is hoe je een goede structuur kan aanbrengen in een project wanneer je met meerdere mensen aan een project werkt. Als ik in mijn eentje werkte, dan gooide ik elke push gewoon in master. Wanneer je met meerdere mensen aan een groot project werkt dan kan dit echt niet. Ik denk dat ik dit uberhaupt vaker ga toepassen, ook als ik in mijn eentje aan een project werk. Ook heb ik meer praktischere dingen geleerd, zoals de intersection observer, wat echt heel handig kan zijn wanneer je dingen wilt gaan doen wanneer elementen op het scherm tevoorschijn komen.
