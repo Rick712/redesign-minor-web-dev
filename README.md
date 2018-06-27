@@ -45,7 +45,7 @@ Ondanks dat dit niet mijn belangrijkste leerdoelen waren, heb ik ze wel gehaald.
 
 De belangrijkste leerdoel die ik had was transities en animaties. Ik ben best trots op hetgeen wat ik gemaakt heb. Bijna alle transities en animaties die terug te vinden zijn op de websites heb ik gemaakt. Daarnaast heb ik ook een script geschreven met de intersection observer die ik zo zou kunnen hergebruiken op andere websites die ik ga maken. Daarnaast heb ik duidelijke hover en focus states gemaakt die de interactie met de gebruiker verbeteren.
 
-```
+``` javascript
 const scrollTransitions = "scroll-transition",
   els = document.querySelectorAll("[" + scrollTransitions + "]"),
   config = {
