@@ -8,7 +8,7 @@ In dit markdown bestandje zal ik mijn persoonlijke proces beschrijven.
 - **[Week 3](#week-3)**
 - **[Week 4](#week-4)**
 - **[Week 5](#week-5)**
-- **[Conclusie](#Conclusie)**
+- **[Conclusie](#conclusie)**
 
 [Link to Pull Requests](https://github.com/baskager/redesign-minor-web-dev/pulls?q=is%3Apr+is%3Aclosed+author%3ARick712)
 

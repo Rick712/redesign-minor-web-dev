@@ -4,6 +4,8 @@ Voor de readme van de web app zelf [klik hier dan](https://github.com/baskager/r
 
 Voor logboek [hier een klein klikje doen](https://github.com/Rick712/redesign-minor-web-dev/blob/develop/rick.md)
 
+[Link naar Pull Requests](https://github.com/baskager/redesign-minor-web-dev/pulls?q=is%3Apr+is%3Aclosed+author%3ARick712)
+
 ## Leerdoelen
 
 Mijn leerdoelen voor dit project waren:
